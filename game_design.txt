@@ -1,24 +1,19 @@
-Map-based games - policy making, resource management,
+Map-based games - policy making, resource management.
 
     - Health: containing virus epidemic 
         ("spreading" algorithm, tempered but not stopped by increased number of doctors and stopped by finding a vaccine)
         (vaccine, number of doctors, etc.) 
         (all dead in X turn, resource allocation for each turn)
     - Crime: managing police resources to minimize crime 
-        (Criminality, Population satisfaction)
-        (repress cancels crime in a given area for one turn but increases it the turn after if nothing is done)
-        (repress, surveil, support)
 
+
+CRIME FIGHTING
 
 Standard game loop:
-    - Initial situation
-    - Advice given (or not) => advisor provides a recommended split of resources OR a estimation of the result of the policy choice
-    - Player decision
+    - Initial situation => map of city with patches of red to indicate crime intensity
+    - (Advice given (or not) => advisor provides a recommended split of resources OR a estimation of the result of the policy choice)
+    - Player decision => allocate resources between actions 1 to 3
     - Resulting situation (feedback loop)
-
-
-
-CRIME 
 
 OUTCOMES:
     Population Satisfaction / Happiness (PopSat): Positive Social Impact => 1 to 100
