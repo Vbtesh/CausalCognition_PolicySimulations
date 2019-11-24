@@ -6,7 +6,9 @@ Examples:
 - Crime fighting
 - Health policy
 
+
 # Crime Fighting
+Note: all numbers are placeholders.
 
 ## Purpuse:
 * Fight crime and manage population satisfaction in a city by making policy choices. 
