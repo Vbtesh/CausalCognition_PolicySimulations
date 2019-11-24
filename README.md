@@ -1,32 +1,32 @@
 # PolicySimulations
 
-## Basic simulations of policy decision making in a given setting.
+## Basic simulation of policy decision-making in a given setting.
 
 Examples:
 - Crime fighting
 - Health policy
 
-# CRIME FIGHTING
+# Crime Fighting
 
-## PURPUSE:
+## Purpuse:
 * Fight crime and manage population satisfaction in a city by making policy choices. 
 * The game is implemented through a turn based resource allocation paradigm
 * The aim is to minimise crime while maximising satisfaction
 
-## GAME LOOP:
+## Game loop:
 * Initial situation => map of city with patches of red to indicate crime intensity
 * (Advice given (or not) => advisor provides a recommended split of resources OR a estimation of the result of the policy choice)
 * Player decision => allocate resources between actions 1 to 3
 * Resulting situation (feedback loop)
 
-## VARIABLE ADJUSTEMENT ORDER (over a turn):
-- Begin Phase: no change, presents output of last turn's calculations
-- Decision Phase: no change, retrieve player input for resource allocation
-- Increment phase: apply the change resulting from player choice:
+## Variable adjustment order (over a turn):
+1. Begin Phase: no change, presents output of last turn's calculations
+2. Decision Phase: no change, retrieve player input for resource allocation
+3. Increment phase: apply the change resulting from player choice:
     * Order: Repress, support then surveil
-- Compute phase: compute new values for next turn from new variable values 
+4. Compute phase: compute new values for next turn from new variable values 
 
-## OUTCOMES:
+## Outcomes:
 1. Population Satisfaction / Happiness (PopSat): Positive Social Impact => 1 to 100
     - Dimension 1: current level => 1 to 100 (1 is min satisfaction and 100 is maximum satisfaction)
     - Dimension 2: changing rate => 1.0 to ?? (is negatively correlated to Crime changing rate)
@@ -38,8 +38,8 @@ Examples:
         * Logic: crime increases on its own if nothing is done to fight it due to criminal groups becoming more and more powerful and having access to more resources
         
 
-## ALLOCATIONS 
-=> 100 "resource" points to allocate in a chosen split between the three policy measures
+## Allocations 
+The player has 100 "resource" points to allocate in a chosen split between the three policy measures
 
 1. Repress: Armed police is sent to location to catch criminals by all means necessary
     - Strongly reduces Crime but increases its growing rate (e.g. 1 Repress = -1 Crime and +0.01 Crime rate)
